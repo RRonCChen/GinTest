@@ -1,0 +1,33 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "using gin with swagger practice",
+        "title": "Ron gin swagger demo",
+        "contact": {},
+        "version": "1.0"
+    },
+    "host": "localhost:8080",
+    "paths": {
+        "/v1/hello/{name}": {
+            "get": {
+                "tags": [
+                    "Hello"
+                ],
+                "parameters": [
+                    {
+                        "type": "string",
+                        "default": "Ron",
+                        "description": "name",
+                        "name": "name",
+                        "in": "path"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+host: localhost:8080
+info:
+  contact: {}
+  description: using gin with swagger practice
+  title: Ron gin swagger demo
+  version: "1.0"
+paths:
+  /v1/hello/{name}:
+    get:
+      parameters:
+      - default: Ron
+        description: name
+        in: path
+        name: name
+        type: string
+      responses:
+        "200":
+          description: OK
+      tags:
+      - Hello
+swagger: "2.0"
